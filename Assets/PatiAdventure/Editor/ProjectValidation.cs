@@ -32,6 +32,8 @@ namespace PatiAdventure.Editor
         {BuildPortalAndroid("PatiAdventure_Mobile_Ready",6,false);}
         public static void BuildDaylightAndroid()
         {BuildPortalAndroid("PatiAdventure_Daylight_Ready",7,false);}
+        public static void BuildExpandedAndroid()
+        {BuildPortalAndroid("PatiAdventure_Expanded_Ready",8,false);}
         private static void BuildPortalAndroid(string outputName,int versionCode,bool generate)
         {
             try

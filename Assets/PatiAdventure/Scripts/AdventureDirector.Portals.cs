@@ -56,7 +56,7 @@ namespace PatiAdventure
             var blue=ColorMaterial(new Color(.17f,.58f,.68f));var purple=ColorMaterial(new Color(.46f,.27f,.63f));
             SetupLivingSky();
             var camera=fox.cameraTransform?fox.cameraTransform.GetComponent<Camera>():null;if(camera)camera.backgroundColor=RenderSettings.fogColor;
-            float width=region==0?44:64;
+            float width=region==0?60:96;
             Shape("Exploration ground",PrimitiveType.Cube,new Vector3(0,-.55f,17),new Vector3(width,1,width),grass);
             BuildFoothillLandscape(width,grass);
             var ridge=NaturalGeometry.Ridge(83);meshes.Add(ridge);var boulder=NaturalGeometry.Rock(17);meshes.Add(boulder);var cone=NaturalGeometry.Cone();meshes.Add(cone);
@@ -78,6 +78,7 @@ namespace PatiAdventure
                 LivingTree(new Vector3(0,0,19),wood,leaves,1.45f);
                 Portal(VillageGatewayPosition(1),1,leaves,gold);Portal(VillageGatewayPosition(2),2,rock,gold);Portal(VillageGatewayPosition(3),3,blue,pale);
                 WorldLabel(L("Üç dünya seni bekliyor!","Three worlds await!"),new Vector3(0,3,8),gold);
+                BuildExpandedVillage(wood,rock,leaves,dark);
                 for(int i=0;i<3;i++)
                 {
                     bool complete=RegionComplete(i+1);
@@ -127,7 +128,8 @@ namespace PatiAdventure
                 for(int i=0;i<8;i++)Shape("Summit stair",PrimitiveType.Cube,new Vector3(-7,(-.05f+i*.25f)/2,26+i*1.25f),new Vector3(4,.1f+i*.25f,1.3f),rock);
                 Shape("Summit terrace",PrimitiveType.Cube,new Vector3(-7,.95f,38),new Vector3(8,2.1f,6),rock);
                 var moving=Shape("Exploration moving platform",PrimitiveType.Cube,new Vector3(7,.25f,31),new Vector3(3,.5f,3),wood);moving.AddComponent<MovingPlatform>().travel=new Vector3(4,0,0);
-                Vector3[] positions={new Vector3(-5,1,6),new Vector3(5,1,10),new Vector3(-12,1,18),new Vector3(12,1,26),new Vector3(-7,3,38),new Vector3(7,1.2f,31),new Vector3(0,1,42),new Vector3(19,1,35)};
+                BuildExpandedTrails(wood,rock,leaves,pale,gold);
+                Vector3[] positions={new Vector3(-5,1,6),new Vector3(5,1,10),new Vector3(-12,1,18),new Vector3(12,1,26),new Vector3(-7,3,38),new Vector3(7,1.2f,31),new Vector3(0,1,42),new Vector3(19,1,35),new Vector3(-30,1,44),new Vector3(-30,1,56),new Vector3(0,1,58),new Vector3(30,1,56),new Vector3(30,1,44)};
                 sharedStar=CreateStar();meshes.Add(sharedStar);
                 for(int i=0;i<positions.Length;i++)
                 {
@@ -154,6 +156,42 @@ namespace PatiAdventure
             fox.SetCheckpoint(new Vector3(0,.2f,region==0?4:-2));fox.Respawn();
             Physics.SyncTransforms();
             if(fox.cameraTransform)fox.cameraTransform.GetComponent<FollowCamera>()?.Snap();
+        }
+        private void BuildExpandedVillage(Material wood,Material rock,Material leaves,Material dark)
+        {
+            Cabin(new Vector3(-20,0,32),wood,rock,dark);
+            Cabin(new Vector3(20,0,32),wood,rock,dark);
+            for(int side=-1;side<=1;side+=2)
+            {
+                LivingTree(new Vector3(side*24,0,20),wood,leaves,1.15f);
+                Shape("Village garden bench",PrimitiveType.Cube,new Vector3(side*16,.6f,37),new Vector3(3,.25f,1),wood);
+                for(int leg=-1;leg<=1;leg+=2)Shape("Garden bench leg",PrimitiveType.Cube,new Vector3(side*16+leg,.25f,37),new Vector3(.2f,.5f,.7f),wood);
+                Shape("Village garden path",PrimitiveType.Cube,new Vector3(side*16,-.035f,29),new Vector3(3,.035f,22),rock,false);
+            }
+            WorldLabel(L("Bahçe yolu","Garden walk"),new Vector3(0,2.5f,39),leaves);
+        }
+        private void BuildExpandedTrails(Material wood,Material rock,Material leaves,Material pale,Material gold)
+        {
+            // Flat, wide loops join the existing adventure to the new outer clearings.
+            // Decoration stays outside the walking lanes and collectible approaches.
+            var path=region==1?wood:region==3?pale:rock;
+            for(int side=-1;side<=1;side+=2)
+            {
+                Shape("Outer exploration trail",PrimitiveType.Cube,new Vector3(side*30,-.025f,41),new Vector3(4,.03f,34),path,false);
+                Shape("Clearing approach trail",PrimitiveType.Cube,new Vector3(side*21,-.025f,26),new Vector3(22,.03f,4),path,false);
+                Shape("Trail rest bench",PrimitiveType.Cube,new Vector3(side*35,.55f,50),new Vector3(3,.2f,1),wood);
+                for(int leg=-1;leg<=1;leg+=2)Shape("Trail bench leg",PrimitiveType.Cube,new Vector3(side*35+leg,.25f,50),new Vector3(.2f,.5f,.8f),wood);
+                for(int i=0;i<5;i++)
+                {
+                    var p=new Vector3(side*39,0,25+i*7);
+                    if(region==1)LivingTree(p,wood,leaves,1.05f+i%2*.2f);
+                    else if(region==2)MeshObject("Outer canyon lookout rock",livingStone,p,new Vector3(3,3+i%2,2),rock,true);
+                    else MeshObject("Outer glacier crystal",livingStone,p,new Vector3(1.5f,3+i%2,1.5f),pale,true);
+                }
+                WorldLabel(region==1?L("Ateşböceği açıklığı","Firefly clearing"):region==2?L("Kanyon seyir yolu","Canyon lookout trail"):L("Kristal vadisi","Crystal valley"),new Vector3(side*30,2.8f,39),gold);
+            }
+            Shape("Far meadow connecting trail",PrimitiveType.Cube,new Vector3(0,-.025f,58),new Vector3(64,.03f,4),path,false);
+            WorldLabel(L("Keşif çemberi • Köye dönüş girişte","Exploration loop • Village portal at the entrance"),new Vector3(0,2.8f,61),gold);
         }
         private void BuildEnemy(Vector3 p,int index,Material body,Material eyes,Material dark,Mesh mesh)
         {
@@ -203,7 +241,7 @@ namespace PatiAdventure
             if(!IsPlaying)return;
             int seeds=0;for(int i=1;i<=3;i++)if(RegionComplete(i))seeds++;
             int enemies=0;foreach(string key in exploration.enemies)if(key.StartsWith(region+":"))enemies++;
-            string objective=region==0?L("Bir portal seç • Her dünyada 5 yıldız ve 4 gölge", "Choose a portal • 5 stars and 4 shadows per world"):(L("Yıldız ","Stars ")+stars+"/5   "+L("Gölge ","Shadows ")+enemies+"/4");
+            string objective=region==0?L("Bir portal seç • Her dünyada 5 yıldız ve 4 gölge", "Choose a portal • 5 stars and 4 shadows per world"):(L("Yıldız ","Stars ")+stars+"/13   "+L("Tohum için 5 yeter • Gölge ","5 for a seed • Shadows ")+enemies+"/4");
             GUI.Box(new Rect(70,10,830,105),RegionName(region)+" • "+L("Işık tohumu ","Light seeds ")+seeds+"/3\n"+objective+"\n"+notice,boxStyle);
             if(region!=0&&GUI.Button(new Rect(15,125,180,45),L("Köye dön","Return to village"),buttonStyle))TravelTo(0);
             if(seeds==3&&region==0)GUI.Box(new Rect(250,135,500,80),L("Üç tohum kurtuldu! Yaşam Ağacı yeniden ışıldıyor!","All three seeds restored! The Tree of Life shines again!"),boxStyle);

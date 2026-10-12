@@ -4,9 +4,14 @@
 
 ## Hemen deneme
 
-Güncel tablet APK'sı: [PatiAdventure_Daylight_Ready.apk](Builds/Android/PatiAdventure_Daylight_Ready.apk), ARM64 / Android 7.1+, versionCode **7**. Bölgesel gün ışığı, yumuşak gölgeler, yeni dağlar/zeminler, sürekli yürünebilir çevre, su/kıyı, ayrıntılı evler, kar taşıyan çam dalları ve yeni tilki yüzü dahildir. Önceki hareket/kamera/dövüş düzeltmeleri korunur. APK v2 imzası doğrulandı; önceki sürümle aynı uygulama kimliği ve sertifikayı kullanır. Tablete kopyalayıp mevcut oyunun üzerine güncelleyin. Fiziksel tablet performansı henüz ölçülmedi. [Görüntüler ve test kapsamı](Docs/DAYLIGHT_WORLD.md).
+Güncel tablet APK: [PatiAdventure_Expanded_Ready.apk](Builds/Android/PatiAdventure_Expanded_Ready.apk), ARM64 / versionCode **8**. Mevcut oyunun üzerine güncellenebilir; v2 imzası ve aynı sertifika doğrulandı. Genişletilmiş sürümde **52 PlayMode + 16 EditMode kontrolü geçti**. Fiziksel tablet performansı henüz ölçülmedi.
 
-Güncel sahne: `Assets/PatiAdventure/Generated/PatiAdventure_Daylight_Ready.unity`. Build listesinde tek etkin sahnedir. Project aramasına `Daylight_Ready` yazıp açın. Son geçerli sonuçlarla **51 farklı PlayMode ve 16 EditMode kontrolü doğrulandı**; üç bölgede 24 yıldız/12 düşman ve köye dönüş normal hareket/saldırı komutlarıyla tamamlandı. [Son görsel tur](Docs/DAYLIGHT_WORLD.md). Modeller prosedürel ve stilizedir.
+Genişletilmiş güncel kaynak sahnesi: [PatiAdventure_Expanded_Ready.unity](Assets/PatiAdventure/Generated/PatiAdventure_Expanded_Ready.unity). Köy 60 × 60 m, üç macera bölgesi 96 × 96 m; dış keşif yolları ve toplam 39 yıldız. Build listesinde tek etkin sahnedir. [Genişletme ve kontroller](Docs/EXPANDED_WORLDS.md). Aşağıdaki Daylight APK ve sonuçları önceki sürüme aittir.
+
+
+Önceki tablet APK'sı: [PatiAdventure_Daylight_Ready.apk](Builds/Android/PatiAdventure_Daylight_Ready.apk), ARM64 / Android 7.1+, versionCode **7**. Bölgesel gün ışığı, yumuşak gölgeler, yeni dağlar/zeminler, sürekli yürünebilir çevre, su/kıyı, ayrıntılı evler, kar taşıyan çam dalları ve yeni tilki yüzü dahildir. Önceki hareket/kamera/dövüş düzeltmeleri korunur. APK v2 imzası doğrulandı; önceki sürümle aynı uygulama kimliği ve sertifikayı kullanır. Tablete kopyalayıp mevcut oyunun üzerine güncelleyin. Fiziksel tablet performansı henüz ölçülmedi. [Görüntüler ve test kapsamı](Docs/DAYLIGHT_WORLD.md).
+
+Önceki sahne: `Assets/PatiAdventure/Generated/PatiAdventure_Daylight_Ready.unity`. Project aramasına `Daylight_Ready` yazıp açın. Son geçerli sonuçlarla **51 farklı PlayMode ve 16 EditMode kontrolü doğrulandı**; üç bölgede 24 yıldız/12 düşman ve köye dönüş normal hareket/saldırı komutlarıyla tamamlandı. [Son görsel tur](Docs/DAYLIGHT_WORLD.md). Modeller prosedürel ve stilizedir.
 
 Önceki tablet sürümü: [PatiAdventure_Mobile_Ready.apk](Builds/Android/PatiAdventure_Mobile_Ready.apk), versionCode 6. Dokunmatik, kamera, kapı beklemesi ve duvar/geri itiş düzeltmeleri bu sürümde eklendi. [Kontrol/dövüş raporu](Docs/MOBILE_QA.md). Önceki sahne `PatiAdventure_Terrain_Ready.unity`; [merdiven ve görsel tur](Docs/TERRAIN_QA.md).
 
@@ -60,7 +65,7 @@ Türkçe kayıt ekleme yolları ve 12 bölge / 36 etap planı [STORY.md](Docs/ST
 
 ## Android
 
-Unity Hub'dan Android Build Support, SDK/NDK ve OpenJDK modüllerini kurun. Build Profiles'ta Android'i seçin; güncel portal oyunu için Scene List'te `PatiAdventure_Daylight_Ready` tek etkin sahne olsun. Bu proje listesinde zaten seçilidir. Eski hikâye akışı için bunun yerine `SunnyForest_Natural` seçilebilir. Uygulama yatay ekranı ve güvenli alanı kullanır. Hazır tablet paketi, izole doğrulama kopyasında `DaylightAndroid` moduyla üretilmiştir.
+Unity Hub'dan Android Build Support, SDK/NDK ve OpenJDK modüllerini kurun. Build Profiles'ta Android'i seçin; güncel portal oyunu için Scene List'te `PatiAdventure_Expanded_Ready` tek etkin sahne olsun. Bu proje listesinde zaten seçilidir. Eski hikâye akışı için bunun yerine `SunnyForest_Natural` seçilebilir. Uygulama yatay ekranı ve güvenli alanı kullanır. Hazır tablet paketi, izole doğrulama kopyasında `DaylightAndroid` moduyla üretilmiştir.
 
 Güncel portal sahnesinin ayrı URP profili: HDR kapalı, render scale 1, MSAA 2, tek ana ışık, 45 m gölge mesafesi, tek kaskad, 1024 gölge çözünürlüğü ve düşük kalite yumuşak gölgeler. Ek ışıklar/postprocess kapalıdır. Renklerin doğru çizilmesi için SRP Batcher kapalı, materyallerde GPU instancing açıktır. Önizleme ve Editor Play aynı sahne profilini kullanır. Eski ilk orman profilinde render scale 0.8, MSAA 1 ve 25 m / 512 gölge ayarı korunur. Hedef 30 FPS; gerçek Android cihaz ölçümü henüz yoktur.
 

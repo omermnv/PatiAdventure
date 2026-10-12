@@ -73,7 +73,7 @@ namespace PatiAdventure.Tests
                 for(int region=1;region<=3;region++)
                 {
                     Assert.IsTrue(director.TravelTo(region));yield return null;
-                    for(int index=0;index<8;index++)
+                    for(int index=0;index<13;index++)
                     {
                         AdventureActor star=null;foreach(var actor in director.GetComponentsInChildren<AdventureActor>())if(actor.role==AdventureActor.Role.Star&&actor.actorId=="star"+index)star=actor;
                         if(!star)continue;
@@ -86,14 +86,36 @@ namespace PatiAdventure.Tests
                     }
                     foreach(var enemy in director.GetComponentsInChildren<PortalEnemy>())if(!enemy.IsDefeated)yield return ExploreTowards(()=>enemy.transform.position,()=>enemy.IsDefeated);
                     var progress=ExplorationProgress.Load();int stars=0,enemies=0;foreach(var id in progress.stars)if(id.StartsWith(region+":"))stars++;foreach(var id in progress.enemies)if(id.StartsWith(region+":"))enemies++;
-                    Assert.AreEqual(8,stars);Assert.AreEqual(4,enemies);Debug.Log("PATI_PLAYTHROUGH region="+region+" stars="+stars+" enemies="+enemies);
+                    Assert.AreEqual(13,stars);Assert.AreEqual(4,enemies);Debug.Log("PATI_PLAYTHROUGH region="+region+" stars="+stars+" enemies="+enemies);
                 }
                 Assert.IsTrue(director.TravelTo(0));yield return null;int seeds=0;
                 foreach(var part in director.GetComponentsInChildren<Transform>())if(part.name=="Restored light seed")
                 {var color=part.GetComponent<Renderer>().sharedMaterial.color;Assert.Greater(color.r,.85f);Assert.Greater(color.g,.6f);seeds++;}
-                Assert.AreEqual(3,seeds);Assert.AreEqual(24,ExplorationProgress.Load().stars.Count);Assert.AreEqual(12,ExplorationProgress.Load().enemies.Count);
+                Assert.AreEqual(3,seeds);Assert.AreEqual(39,ExplorationProgress.Load().stars.Count);Assert.AreEqual(12,ExplorationProgress.Load().enemies.Count);
             }
             finally {director.fox.cameraTransform=camera;director.fox.TouchMove=Vector2.zero;director.fox.TouchRun=false;}
+        }
+        [UnityTest,Timeout(180000)]public IEnumerator ExpandedLoopsSupportWalkingAndAllBonusPickups()
+        {
+            var fox=director.fox;var camera=fox.cameraTransform;fox.cameraTransform=null;
+            try
+            {
+                for(int region=1;region<=3;region++)
+                {
+                    if(region>1)yield return new WaitForSeconds(1.6f);
+                    Assert.IsTrue(director.TravelTo(region));yield return null;
+                    foreach(var enemy in director.GetComponentsInChildren<PortalEnemy>())enemy.enabled=false;
+                    fox.SetCheckpoint(new Vector3(-30,.2f,26));fox.Respawn();yield return new WaitForSeconds(.3f);
+                    Vector3[] route={new Vector3(-30,0,44),new Vector3(-30,0,56),new Vector3(-30,0,58),new Vector3(0,0,58),new Vector3(30,0,58),new Vector3(30,0,56),new Vector3(30,0,44),new Vector3(30,0,26)};
+                    foreach(var point in route)
+                    {
+                        yield return WalkTo(point,true);
+                        Assert.IsTrue(fox.IsGrounded,"Expanded trail has no ground at "+point);
+                    }
+                    for(int index=8;index<13;index++)Assert.Contains(region+":star"+index,ExplorationProgress.Load().stars,"Bonus star cannot be collected from the trail.");
+                }
+            }
+            finally {fox.cameraTransform=camera;fox.TouchMove=Vector2.zero;fox.TouchRun=false;}
         }
         [UnityTest]public IEnumerator AllRegionalStairsHavePawContactAndCanBeAscendedAndDescended()
         {

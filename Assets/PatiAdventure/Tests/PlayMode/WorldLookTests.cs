@@ -31,7 +31,7 @@ namespace PatiAdventure.Tests
             {
                 if(region>0){yield return new WaitForSeconds(1.6f);Assert.IsTrue(director.TravelTo(region));yield return null;}
                 foreach(var enemy in director.GetComponentsInChildren<PortalEnemy>())enemy.enabled=false;
-                float edge=17-(region==0?44:64)*.5f;var fox=director.fox;var camera=fox.cameraTransform;fox.cameraTransform=null;
+                float edge=17-(region==0?60:96)*.5f;var fox=director.fox;var camera=fox.cameraTransform;fox.cameraTransform=null;
                 try
                 {
                     fox.SetCheckpoint(new Vector3(0,.25f,edge+.65f));fox.Respawn();yield return new WaitForSeconds(.35f);
