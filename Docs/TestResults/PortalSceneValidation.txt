@@ -1,0 +1,3 @@
+Missing scripts: 0
+Village portals: 3
+Scene: Assets/PatiAdventure/Generated/PatiPortals 2.unity

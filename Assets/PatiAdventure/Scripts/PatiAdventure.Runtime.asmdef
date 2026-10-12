@@ -1,0 +1,6 @@
+{
+  "name": "PatiAdventure.Runtime",
+  "rootNamespace": "PatiAdventure",
+  "references": ["Unity.InputSystem", "UnityEngine.UI", "Unity.RenderPipelines.Core.Runtime"],
+  "autoReferenced": true
+}

@@ -1,0 +1,9 @@
+Android APK built successfully.
+APK size: 34929301 bytes (about 35 MB)
+Package: com.UnityTechnologies.com.unity.template.urpblank
+Version code: 2
+Minimum SDK: 25; Target SDK: 36
+Native ABI: arm64-v8a / IL2CPP
+APK Signature Scheme v2: verified
+SHA256: 5149F4ED6FC6E42F88F03CA5907392A198E56E2A6AF68B71F1873362EA0F5E85
+Device installation, performance and TTS not tested.

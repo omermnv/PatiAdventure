@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="11" result="Failed(Child)" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:24Z" duration="15,0762559">
+  <test-suite type="TestSuite" id="1061" name="PatiValidation" fullname="PatiValidation" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:24Z" duration="15.076256" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1055" name="PatiAdventure.PlayModeTests.dll" fullname="C:/UnityProjects/PatiAdventure/.codex-validation/UnityValidation-20261012-114703/Library/ScriptAssemblies/PatiAdventure.PlayModeTests.dll" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:24Z" duration="15.062700" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="32156" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1056" name="PatiAdventure" fullname="PatiAdventure" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:24Z" duration="15.060887" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1057" name="Tests" fullname="PatiAdventure.Tests" runstate="Runnable" testcasecount="45" result="Failed" site="Child" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:24Z" duration="15.057507" total="11" passed="10" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="1001" name="FollowCameraTests" fullname="PatiAdventure.Tests.FollowCameraTests" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:11Z" duration="2.171716" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1004" name="CameraPullsOutGraduallyAfterObstacleDisappears" fullname="PatiAdventure.Tests.FollowCameraTests.CameraPullsOutGraduallyAfterObstacleDisappears" methodname="CameraPullsOutGraduallyAfterObstacleDisappears" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="930969360" result="Passed" start-time="2026-10-12 15:21:09Z" end-time="2026-10-12 15:21:11Z" duration="2.094387" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="PausedDragDoesNotJumpOnResume" fullname="PatiAdventure.Tests.FollowCameraTests.PausedDragDoesNotJumpOnResume" methodname="PausedDragDoesNotJumpOnResume" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="1020183443" result="Failed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.018527" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <failure>
+                <message><![CDATA[  Expected: less than 0.00100000005f
+  But was:  13.4115582f
+]]></message>
+                <stack-trace><![CDATA[at PatiAdventure.Tests.FollowCameraTests+<PausedDragDoesNotJumpOnResume>d__9.MoveNext () [0x000a4] in C:\UnityProjects\PatiAdventure\.codex-validation\UnityValidation-20261012-114703\Assets\PatiAdventure\Tests\PlayMode\FollowCameraTests.cs:53
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@bd7f943e9647\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1005" name="SnapIgnoresPlayerChildrenAndTriggers" fullname="PatiAdventure.Tests.FollowCameraTests.SnapIgnoresPlayerChildrenAndTriggers" methodname="SnapIgnoresPlayerChildrenAndTriggers" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="1259276114" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.009323" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="SnapStopsBeforeAnObstructionImmediately" fullname="PatiAdventure.Tests.FollowCameraTests.SnapStopsBeforeAnObstructionImmediately" methodname="SnapStopsBeforeAnObstructionImmediately" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="2036475261" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.001757" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1019" name="MobileInputTests" fullname="PatiAdventure.Tests.MobileInputTests" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.358718" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1025" name="CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" fullname="PatiAdventure.Tests.MobileInputTests.CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" methodname="CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="400703874" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.018667" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1026" name="JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" fullname="PatiAdventure.Tests.MobileInputTests.JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" methodname="JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="982499984" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.322394" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="LockedTouchDoesNotKeepOwnershipAfterUnlock" fullname="PatiAdventure.Tests.MobileInputTests.LockedTouchDoesNotKeepOwnershipAfterUnlock" methodname="LockedTouchDoesNotKeepOwnershipAfterUnlock" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="133417764" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.002101" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1024" name="LosingApplicationInputReleasesAndAcceptsNewFingers" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.007090" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1022" name="LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationFocus&quot;,False)" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationFocus&quot;,False)" methodname="LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="979313498" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.003564" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationPause&quot;,True)" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationPause&quot;,True)" methodname="LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="1793076451" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.001883" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1020" name="SecondFingerCannotStealOrReleaseJoystick" fullname="PatiAdventure.Tests.MobileInputTests.SecondFingerCannotStealOrReleaseJoystick" methodname="SecondFingerCannotStealOrReleaseJoystick" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="662930449" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:11Z" duration="0.004878" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1051" name="PortalTransitionTests" fullname="PatiAdventure.Tests.PortalTransitionTests" classname="PatiAdventure.Tests.PortalTransitionTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:24Z" duration="12.520959" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="ReturnPortalEnteredDuringCooldownTravelsWhenReady" fullname="PatiAdventure.Tests.PortalTransitionTests.ReturnPortalEnteredDuringCooldownTravelsWhenReady" methodname="ReturnPortalEnteredDuringCooldownTravelsWhenReady" classname="PatiAdventure.Tests.PortalTransitionTests" runstate="Runnable" seed="515581454" result="Passed" start-time="2026-10-12 15:21:11Z" end-time="2026-10-12 15:21:24Z" duration="12.518301" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Saving results to: C:/Users/apple/AppData/LocalLow/PatiValidation/PatiValidation\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

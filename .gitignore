@@ -7,6 +7,10 @@
 /[Uu]ser[Ss]ettings/
 /MemoryCaptures/
 /Recordings/
+/ValidationResults/
+/.codex-validation/
+/.utmp/
+/TestResults/
 .vs/
 .idea/
 *.csproj

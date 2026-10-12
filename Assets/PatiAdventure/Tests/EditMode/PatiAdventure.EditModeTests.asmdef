@@ -1,0 +1,7 @@
+{
+ "name":"PatiAdventure.EditModeTests",
+ "references":["PatiAdventure.Runtime","PatiAdventure.Editor"],
+ "includePlatforms":["Editor"],
+ "optionalUnityReferences":["TestAssemblies"],
+ "autoReferenced":false
+}

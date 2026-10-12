@@ -1,0 +1,7 @@
+{
+  "name": "PatiAdventure.Editor",
+  "rootNamespace": "PatiAdventure.Editor",
+  "references": ["PatiAdventure.Runtime", "Unity.RenderPipelines.Universal.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

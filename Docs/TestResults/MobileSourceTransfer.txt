@@ -1,0 +1,4 @@
+﻿Validation sources match: 43 C# files
+Generated scene: Assets/PatiAdventure/Generated/PatiPortals 7.unity
+Exported scene SHA256: 1C917625114FA8F44DE3C6C36C5DE8F00E5D1BE581A31B15DBFEC7B58FBF9EEE
+No serialized scene changes in this iteration.

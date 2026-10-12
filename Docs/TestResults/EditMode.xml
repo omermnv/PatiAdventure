@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="9" result="Passed" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6,6480417">
+  <test-suite type="TestSuite" id="1000" name="PatiValidation" fullname="PatiValidation" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.648042" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1013" name="PatiAdventure.EditModeTests.dll" fullname="C:/UnityProjects/PatiAdventure/Temp/UnityValidation-20261011-154926/Library/ScriptAssemblies/PatiAdventure.EditModeTests.dll" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.638952" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="11188" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1014" name="PatiAdventure" fullname="PatiAdventure" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.638285" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1015" name="Tests" fullname="PatiAdventure.Tests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.637936" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="ProgressTests" fullname="PatiAdventure.Tests.ProgressTests" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.051366" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1004" name="CheckpointAndCollectiblesSurviveSerialization" fullname="PatiAdventure.Tests.ProgressTests.CheckpointAndCollectiblesSurviveSerialization" methodname="CheckpointAndCollectiblesSurviveSerialization" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="613895515" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.020565" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1002" name="FirstForestRequiresPracticeGuideRescueAndBeacon" fullname="PatiAdventure.Tests.ProgressTests.FirstForestRequiresPracticeGuideRescueAndBeacon" methodname="FirstForestRequiresPracticeGuideRescueAndBeacon" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="1746381163" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.001355" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1005" name="InvalidSaveFallsBackSafely" fullname="PatiAdventure.Tests.ProgressTests.InvalidSaveFallsBackSafely" methodname="InvalidSaveFallsBackSafely" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="1814244898" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.000553" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1009" name="LaterStagesRequireAllThreeObjectives" fullname="PatiAdventure.Tests.ProgressTests.LaterStagesRequireAllThreeObjectives" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.008258" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1007" name="LaterStagesRequireAllThreeObjectives(1)" fullname="PatiAdventure.Tests.ProgressTests.LaterStagesRequireAllThreeObjectives(1)" methodname="LaterStagesRequireAllThreeObjectives" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="2055903931" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.003458" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="LaterStagesRequireAllThreeObjectives(2)" fullname="PatiAdventure.Tests.ProgressTests.LaterStagesRequireAllThreeObjectives(2)" methodname="LaterStagesRequireAllThreeObjectives" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="1358145268" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.000193" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1003" name="PickupsCannotBeCountedTwice" fullname="PatiAdventure.Tests.ProgressTests.PickupsCannotBeCountedTwice" methodname="PickupsCannotBeCountedTwice" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="1239381931" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.000500" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="SavedLevelIsClamped" fullname="PatiAdventure.Tests.ProgressTests.SavedLevelIsClamped" methodname="SavedLevelIsClamped" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="388272547" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.001977" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1010" name="StoryKeepsTwelveBilingualRegions" fullname="PatiAdventure.Tests.ProgressTests.StoryKeepsTwelveBilingualRegions" methodname="StoryKeepsTwelveBilingualRegions" classname="PatiAdventure.Tests.ProgressTests" runstate="Runnable" seed="1860165300" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:10Z" duration="0.000706" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1011" name="SceneBuilderTests" fullname="PatiAdventure.Tests.SceneBuilderTests" classname="PatiAdventure.Tests.SceneBuilderTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.585479" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1012" name="GeneratorUsesUniquePathsAndPreservesActiveScene" fullname="PatiAdventure.Tests.SceneBuilderTests.GeneratorUsesUniquePathsAndPreservesActiveScene" methodname="GeneratorUsesUniquePathsAndPreservesActiveScene" classname="PatiAdventure.Tests.SceneBuilderTests" runstate="Runnable" seed="507403395" result="Passed" start-time="2026-10-11 13:03:10Z" end-time="2026-10-11 13:03:17Z" duration="6.584375" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Pati sahnesi hazır: Assets/PatiAdventure/Generated/SunnyForest.unity
+Pati sahnesi hazır: Assets/PatiAdventure/Generated/SunnyForest 1.unity
+Saving results to: C:/Users/apple/AppData/LocalLow/PatiValidation/PatiValidation\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

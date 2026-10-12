@@ -1,0 +1,6 @@
+{
+ "name":"PatiAdventure.PlayModeTests",
+ "references":["PatiAdventure.Runtime","Unity.InputSystem","UnityEngine.UI","Unity.RenderPipelines.Core.Runtime","Unity.RenderPipelines.Universal.Runtime"],
+ "optionalUnityReferences":["TestAssemblies"],
+ "autoReferenced":false
+}

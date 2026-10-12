@@ -1,0 +1,3 @@
+Android APK built successfully.
+APK size: 35005277 bytes
+ARM64 / IL2CPP. Version code 3. Device installation and performance not tested.

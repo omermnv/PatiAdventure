@@ -1,0 +1,5 @@
+﻿Scene: PatiAdventure_Daylight_Ready.unity
+References: 94
+Unresolved: 0
+Duplicate project GUIDs: 0
+Source and exported scene SHA256: 59CAAD2B8F55F6B66453F4F8EC1C0A69BF1B9B527456A068A7C3100A51B8F141

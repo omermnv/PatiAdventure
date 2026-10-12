@@ -1,0 +1,4 @@
+Unity 6000.3.26f1
+Missing scripts: 0
+Gameplay actors: 16
+Scene: Assets/PatiAdventure/Generated/PatiStory 1.unity

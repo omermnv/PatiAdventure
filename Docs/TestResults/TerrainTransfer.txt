@@ -1,0 +1,5 @@
+﻿Scene: PatiAdventure_Terrain_Ready.unity
+References: 80
+Unresolved: 0
+Duplicate project GUIDs: 0
+Source and exported scene SHA256: 1C917625114FA8F44DE3C6C36C5DE8F00E5D1BE581A31B15DBFEC7B58FBF9EEE

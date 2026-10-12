@@ -5,9 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/PatiAdventure/Generated/PatiAdventure_Portals_Ready.unity
+    guid: 82fbf5cece4663045a83f2fefeb15448
+  - enabled: 0
+    path: Assets/PatiAdventure/Generated/PatiAdventure_World_Polish.unity
+    guid: a0992cbdabe7a4f43ad3e74032c7e34d
+  - enabled: 0
+    path: Assets/PatiAdventure/Generated/PatiAdventure_Terrain_Ready.unity
+    guid: 64e6ede4e335e284ab1b1efb2b73a3f9
+  - enabled: 1
+    path: Assets/PatiAdventure/Generated/PatiAdventure_Daylight_Ready.unity
+    guid: dd9695c15eb970742af4cce22a7b63f2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,0 +1,7 @@
+﻿Scene: PatiAdventure_Visual_Polish.unity
+References: 52
+Project references: 49
+URP package references: 1
+Unity built-in references: 2
+Unresolved: 0
+Duplicate project GUIDs: 0

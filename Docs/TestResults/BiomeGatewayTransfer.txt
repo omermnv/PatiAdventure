@@ -1,0 +1,4 @@
+﻿Scene: PatiAdventure_Biome_Gateways.unity
+References: 62
+Unresolved: 0
+Duplicate project GUIDs: 0

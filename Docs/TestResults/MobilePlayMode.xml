@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="48" result="Passed" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:38:36Z" duration="291,9288879">
+  <test-suite type="TestSuite" id="1065" name="PatiValidation" fullname="PatiValidation" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:38:36Z" duration="291.928888" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1059" name="PatiAdventure.PlayModeTests.dll" fullname="C:/UnityProjects/PatiAdventure/.codex-validation/UnityValidation-20261012-114703/Library/ScriptAssemblies/PatiAdventure.PlayModeTests.dll" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:38:36Z" duration="291.915621" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="6044" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1060" name="PatiAdventure" fullname="PatiAdventure" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:38:36Z" duration="291.913373" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1061" name="Tests" fullname="PatiAdventure.Tests" runstate="Runnable" testcasecount="48" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:38:36Z" duration="291.911420" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1001" name="CombatCollisionTests" fullname="PatiAdventure.Tests.CombatCollisionTests" classname="PatiAdventure.Tests.CombatCollisionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:33:52Z" duration="8.209893" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1002" name="BiteAndSpinRespectSolidCoverButIgnoreActorBodiesAndTriggers" fullname="PatiAdventure.Tests.CombatCollisionTests.BiteAndSpinRespectSolidCoverButIgnoreActorBodiesAndTriggers" methodname="BiteAndSpinRespectSolidCoverButIgnoreActorBodiesAndTriggers" classname="PatiAdventure.Tests.CombatCollisionTests" runstate="Runnable" seed="530003729" result="Passed" start-time="2026-10-12 15:33:44Z" end-time="2026-10-12 15:33:47Z" duration="2.787976" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1003" name="EnemyCannotStrikeThroughCoverIncludingCoverAddedDuringItsWindup" fullname="PatiAdventure.Tests.CombatCollisionTests.EnemyCannotStrikeThroughCoverIncludingCoverAddedDuringItsWindup" methodname="EnemyCannotStrikeThroughCoverIncludingCoverAddedDuringItsWindup" classname="PatiAdventure.Tests.CombatCollisionTests" runstate="Runnable" seed="1847230563" result="Passed" start-time="2026-10-12 15:33:47Z" end-time="2026-10-12 15:33:52Z" duration="4.840898" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1004" name="GuardianKnockbackStopsBeforeStoneAndKeepsItsFeetOnTheFloor" fullname="PatiAdventure.Tests.CombatCollisionTests.GuardianKnockbackStopsBeforeStoneAndKeepsItsFeetOnTheFloor" methodname="GuardianKnockbackStopsBeforeStoneAndKeepsItsFeetOnTheFloor" classname="PatiAdventure.Tests.CombatCollisionTests" runstate="Runnable" seed="1958590644" result="Passed" start-time="2026-10-12 15:33:52Z" end-time="2026-10-12 15:33:52Z" duration="0.555559" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1005" name="FollowCameraTests" fullname="PatiAdventure.Tests.FollowCameraTests" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-10-12 15:33:52Z" end-time="2026-10-12 15:33:55Z" duration="2.458955" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1008" name="CameraPullsOutGraduallyAfterObstacleDisappears" fullname="PatiAdventure.Tests.FollowCameraTests.CameraPullsOutGraduallyAfterObstacleDisappears" methodname="CameraPullsOutGraduallyAfterObstacleDisappears" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="2049600384" result="Passed" start-time="2026-10-12 15:33:52Z" end-time="2026-10-12 15:33:55Z" duration="2.199406" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1007" name="PausedDragDoesNotJumpOnResume" fullname="PatiAdventure.Tests.FollowCameraTests.PausedDragDoesNotJumpOnResume" methodname="PausedDragDoesNotJumpOnResume" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="770076611" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:33:55Z" duration="0.166477" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1009" name="SnapIgnoresPlayerChildrenAndTriggers" fullname="PatiAdventure.Tests.FollowCameraTests.SnapIgnoresPlayerChildrenAndTriggers" methodname="SnapIgnoresPlayerChildrenAndTriggers" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="198669855" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:33:55Z" duration="0.033784" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1006" name="SnapStopsBeforeAnObstructionImmediately" fullname="PatiAdventure.Tests.FollowCameraTests.SnapStopsBeforeAnObstructionImmediately" methodname="SnapStopsBeforeAnObstructionImmediately" classname="PatiAdventure.Tests.FollowCameraTests" runstate="Runnable" seed="197044446" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:33:55Z" duration="0.032505" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1010" name="ForestIntegrationTests" fullname="PatiAdventure.Tests.ForestIntegrationTests" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:34:08Z" duration="13.371739" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1013" name="GateRequiresGuideFriendBeaconAndFiveStars" fullname="PatiAdventure.Tests.ForestIntegrationTests.GateRequiresGuideFriendBeaconAndFiveStars" methodname="GateRequiresGuideFriendBeaconAndFiveStars" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="249549536" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:33:55Z" duration="0.479698" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1011" name="LanguageSelectionLocksMovementAndCreatesCanvas" fullname="PatiAdventure.Tests.ForestIntegrationTests.LanguageSelectionLocksMovementAndCreatesCanvas" methodname="LanguageSelectionLocksMovementAndCreatesCanvas" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="1772257722" result="Passed" start-time="2026-10-12 15:33:55Z" end-time="2026-10-12 15:33:56Z" duration="0.267180" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1014" name="PauseStopsMotionAndResumesSafely" fullname="PatiAdventure.Tests.ForestIntegrationTests.PauseStopsMotionAndResumesSafely" methodname="PauseStopsMotionAndResumesSafely" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="1348290803" result="Passed" start-time="2026-10-12 15:33:56Z" end-time="2026-10-12 15:33:56Z" duration="0.535914" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1016" name="ReloadRestoresCheckpointAndHidesCollectedStars" fullname="PatiAdventure.Tests.ForestIntegrationTests.ReloadRestoresCheckpointAndHidesCollectedStars" methodname="ReloadRestoresCheckpointAndHidesCollectedStars" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="2145314939" result="Passed" start-time="2026-10-12 15:33:56Z" end-time="2026-10-12 15:33:57Z" duration="0.480195" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1012" name="StaticPickupTriggersFromCharacterControllerAndPersists" fullname="PatiAdventure.Tests.ForestIntegrationTests.StaticPickupTriggersFromCharacterControllerAndPersists" methodname="StaticPickupTriggersFromCharacterControllerAndPersists" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="1074377658" result="Passed" start-time="2026-10-12 15:33:57Z" end-time="2026-10-12 15:33:58Z" duration="1.223467" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1015" name="WakeWalkRunAndJumpUnlockFirstForest" fullname="PatiAdventure.Tests.ForestIntegrationTests.WakeWalkRunAndJumpUnlockFirstForest" methodname="WakeWalkRunAndJumpUnlockFirstForest" classname="PatiAdventure.Tests.ForestIntegrationTests" runstate="Runnable" seed="1717131668" result="Passed" start-time="2026-10-12 15:33:58Z" end-time="2026-10-12 15:34:08Z" duration="10.350615" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1017" name="LivingVisualTests" fullname="PatiAdventure.Tests.LivingVisualTests" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-10-12 15:34:08Z" end-time="2026-10-12 15:34:18Z" duration="9.816262" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1020" name="BiteMovesJawAndSpinRotatesBodyThenReturnsToRest" fullname="PatiAdventure.Tests.LivingVisualTests.BiteMovesJawAndSpinRotatesBodyThenReturnsToRest" methodname="BiteMovesJawAndSpinRotatesBodyThenReturnsToRest" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" seed="578534442" result="Passed" start-time="2026-10-12 15:34:08Z" end-time="2026-10-12 15:34:10Z" duration="1.613893" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1021" name="EnemiesHaveRecognisableRegionalAnatomy" fullname="PatiAdventure.Tests.LivingVisualTests.EnemiesHaveRecognisableRegionalAnatomy" methodname="EnemiesHaveRecognisableRegionalAnatomy" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" seed="1547079850" result="Passed" start-time="2026-10-12 15:34:10Z" end-time="2026-10-12 15:34:16Z" duration="5.746787" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1018" name="FoxHasArticulatedJawLegsAndTail" fullname="PatiAdventure.Tests.LivingVisualTests.FoxHasArticulatedJawLegsAndTail" methodname="FoxHasArticulatedJawLegsAndTail" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" seed="2076164209" result="Passed" start-time="2026-10-12 15:34:16Z" end-time="2026-10-12 15:34:16Z" duration="0.521883" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1022" name="PlatformDecorationFollowsMovingSupport" fullname="PatiAdventure.Tests.LivingVisualTests.PlatformDecorationFollowsMovingSupport" methodname="PlatformDecorationFollowsMovingSupport" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" seed="1779301079" result="Passed" start-time="2026-10-12 15:34:16Z" end-time="2026-10-12 15:34:18Z" duration="1.371638" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1019" name="TailIsOneContinuousSkinAndBendsWithoutSeparating" fullname="PatiAdventure.Tests.LivingVisualTests.TailIsOneContinuousSkinAndBendsWithoutSeparating" methodname="TailIsOneContinuousSkinAndBendsWithoutSeparating" classname="PatiAdventure.Tests.LivingVisualTests" runstate="Runnable" seed="611051005" result="Passed" start-time="2026-10-12 15:34:18Z" end-time="2026-10-12 15:34:18Z" duration="0.528886" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1023" name="MobileInputTests" fullname="PatiAdventure.Tests.MobileInputTests" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-10-12 15:34:18Z" end-time="2026-10-12 15:34:19Z" duration="0.696045" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1029" name="CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" fullname="PatiAdventure.Tests.MobileInputTests.CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" methodname="CameraDragUsesCanvasScaleAndKeepsItsOwnFinger" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="977088849" result="Passed" start-time="2026-10-12 15:34:18Z" end-time="2026-10-12 15:34:18Z" duration="0.032812" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1030" name="JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" fullname="PatiAdventure.Tests.MobileInputTests.JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" methodname="JoystickRunAndJumpWorkTogetherWithoutReleasingEachOther" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="364886328" result="Passed" start-time="2026-10-12 15:34:18Z" end-time="2026-10-12 15:34:19Z" duration="0.466556" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1025" name="LockedTouchDoesNotKeepOwnershipAfterUnlock" fullname="PatiAdventure.Tests.MobileInputTests.LockedTouchDoesNotKeepOwnershipAfterUnlock" methodname="LockedTouchDoesNotKeepOwnershipAfterUnlock" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="900923697" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:19Z" duration="0.032981" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1028" name="LosingApplicationInputReleasesAndAcceptsNewFingers" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:19Z" duration="0.099397" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1026" name="LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationFocus&quot;,False)" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationFocus&quot;,False)" methodname="LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="1912437564" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:19Z" duration="0.033104" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationPause&quot;,True)" fullname="PatiAdventure.Tests.MobileInputTests.LosingApplicationInputReleasesAndAcceptsNewFingers(&quot;OnApplicationPause&quot;,True)" methodname="LosingApplicationInputReleasesAndAcceptsNewFingers" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="83269367" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:19Z" duration="0.033186" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-case id="1024" name="SecondFingerCannotStealOrReleaseJoystick" fullname="PatiAdventure.Tests.MobileInputTests.SecondFingerCannotStealOrReleaseJoystick" methodname="SecondFingerCannotStealOrReleaseJoystick" classname="PatiAdventure.Tests.MobileInputTests" runstate="Runnable" seed="1805947104" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:19Z" duration="0.032954" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1031" name="MovementTests" fullname="PatiAdventure.Tests.MovementTests" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:44Z" duration="24.966429" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1032" name="AccelerationAndStoppingAreSmooth" fullname="PatiAdventure.Tests.MovementTests.AccelerationAndStoppingAreSmooth" methodname="AccelerationAndStoppingAreSmooth" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="472696033" result="Passed" start-time="2026-10-12 15:34:19Z" end-time="2026-10-12 15:34:20Z" duration="1.632934" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1037" name="CameraStaysInFrontOfBlockingWall" fullname="PatiAdventure.Tests.MovementTests.CameraStaysInFrontOfBlockingWall" methodname="CameraStaysInFrontOfBlockingWall" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="2113081687" result="Passed" start-time="2026-10-12 15:34:20Z" end-time="2026-10-12 15:34:21Z" duration="0.899476" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1041" name="CrossesStairsDiagonallyWithoutGettingCaught" fullname="PatiAdventure.Tests.MovementTests.CrossesStairsDiagonallyWithoutGettingCaught" methodname="CrossesStairsDiagonallyWithoutGettingCaught" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="1580338116" result="Passed" start-time="2026-10-12 15:34:21Z" end-time="2026-10-12 15:34:25Z" duration="3.666346" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1033" name="DoubleJumpWorksButThirdJumpDoesNot" fullname="PatiAdventure.Tests.MovementTests.DoubleJumpWorksButThirdJumpDoesNot" methodname="DoubleJumpWorksButThirdJumpDoesNot" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="792123265" result="Passed" start-time="2026-10-12 15:34:25Z" end-time="2026-10-12 15:34:26Z" duration="0.799611" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1035" name="FallingReturnsToCheckpoint" fullname="PatiAdventure.Tests.MovementTests.FallingReturnsToCheckpoint" methodname="FallingReturnsToCheckpoint" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="423653172" result="Passed" start-time="2026-10-12 15:34:26Z" end-time="2026-10-12 15:34:26Z" duration="0.566348" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="MovingPlatformCarriesStandingFox" fullname="PatiAdventure.Tests.MovementTests.MovingPlatformCarriesStandingFox" methodname="MovingPlatformCarriesStandingFox" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="791777856" result="Passed" start-time="2026-10-12 15:34:26Z" end-time="2026-10-12 15:34:29Z" duration="2.099782" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="RunsUpAndDownQuarterMetreStairs" fullname="PatiAdventure.Tests.MovementTests.RunsUpAndDownQuarterMetreStairs" methodname="RunsUpAndDownQuarterMetreStairs" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="1241959433" result="Passed" start-time="2026-10-12 15:34:29Z" end-time="2026-10-12 15:34:33Z" duration="4.766378" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1034" name="SolidWallBlocksMovement" fullname="PatiAdventure.Tests.MovementTests.SolidWallBlocksMovement" methodname="SolidWallBlocksMovement" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="1188340478" result="Passed" start-time="2026-10-12 15:34:33Z" end-time="2026-10-12 15:34:35Z" duration="1.533008" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="WalksUpAndDownQuarterMetreStairs" fullname="PatiAdventure.Tests.MovementTests.WalksUpAndDownQuarterMetreStairs" methodname="WalksUpAndDownQuarterMetreStairs" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="384626668" result="Passed" start-time="2026-10-12 15:34:35Z" end-time="2026-10-12 15:34:41Z" duration="6.399522" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="WalksUpSlopingGround" fullname="PatiAdventure.Tests.MovementTests.WalksUpSlopingGround" methodname="WalksUpSlopingGround" classname="PatiAdventure.Tests.MovementTests" runstate="Runnable" seed="2103676670" result="Passed" start-time="2026-10-12 15:34:41Z" end-time="2026-10-12 15:34:44Z" duration="2.566599" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1042" name="PortalAdventureTests" fullname="PatiAdventure.Tests.PortalAdventureTests" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-10-12 15:34:44Z" end-time="2026-10-12 15:38:19Z" duration="215.709280" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1044" name="AllRegionalStairsHavePawContactAndCanBeAscendedAndDescended" fullname="PatiAdventure.Tests.PortalAdventureTests.AllRegionalStairsHavePawContactAndCanBeAscendedAndDescended" methodname="AllRegionalStairsHavePawContactAndCanBeAscendedAndDescended" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="2003464870" result="Passed" start-time="2026-10-12 15:34:44Z" end-time="2026-10-12 15:35:43Z" duration="59.424107" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[PATI_PAW region=1 run=False sole=(-7.24, 0.77, 29.38) ground=(-7.24, 0.78, 29.38) error=2,980232E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=1 run=False sole=(-6.77, 0.78, 29.12) ground=(-6.77, 0.78, 29.12) error=2,384186E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=1 run=False sole=(-7.24, 0.52, 28.47) ground=(-7.24, 0.53, 28.47) error=2,980232E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=1 run=False sole=(-6.77, 0.53, 28.59) ground=(-6.77, 0.53, 28.59) error=1,192093E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=1 run=True sole=(-7.25, 0.78, 29.64) ground=(-7.25, 0.78, 29.64) error=5,960464E-08 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=1 run=True sole=(-6.77, 0.78, 29.79) ground=(-6.77, 0.78, 29.79) error=5,960464E-08 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=1 run=True sole=(-7.24, 0.53, 28.99) ground=(-7.24, 0.53, 28.99) error=2,980232E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=1 run=True sole=(-6.78, 0.52, 28.84) ground=(-6.78, 0.53, 28.84) error=2,384186E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=2 run=False sole=(-7.24, 0.77, 29.38) ground=(-7.24, 0.78, 29.38) error=1,788139E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=2 run=False sole=(-6.76, 0.78, 29.16) ground=(-6.76, 0.78, 29.16) error=4,172325E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=2 run=False sole=(-7.24, 0.53, 28.51) ground=(-7.24, 0.53, 28.51) error=0 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=2 run=False sole=(-6.77, 0.53, 28.59) ground=(-6.77, 0.53, 28.59) error=2,384186E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=2 run=True sole=(-7.24, 0.78, 29.78) ground=(-7.24, 0.78, 29.78) error=5,364418E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=2 run=True sole=(-6.77, 0.78, 29.79) ground=(-6.77, 0.78, 29.79) error=0 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=2 run=True sole=(-7.24, 0.53, 28.99) ground=(-7.24, 0.53, 28.99) error=6,556511E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=2 run=True sole=(-6.78, 0.52, 28.85) ground=(-6.78, 0.53, 28.85) error=8,34465E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=3 run=False sole=(-7.24, 0.77, 29.38) ground=(-7.24, 0.78, 29.38) error=2,384186E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=3 run=False sole=(-6.76, 0.78, 29.16) ground=(-6.76, 0.78, 29.16) error=2,980232E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=3 run=False sole=(-7.24, 0.52, 28.52) ground=(-7.24, 0.53, 28.52) error=9,536743E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=3 run=False sole=(-6.77, 0.53, 28.59) ground=(-6.77, 0.53, 28.59) error=1,192093E-07 body=(-7.00, 0.83, 28.97)
+PATI_PAW region=3 run=True sole=(-7.25, 0.78, 29.60) ground=(-7.25, 0.78, 29.60) error=5,960464E-08 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=3 run=True sole=(-6.77, 0.77, 29.79) ground=(-6.77, 0.78, 29.79) error=5,364418E-07 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=3 run=True sole=(-7.24, 0.52, 28.99) ground=(-7.24, 0.53, 28.99) error=1,072884E-06 body=(-7.00, 0.85, 29.37)
+PATI_PAW region=3 run=True sole=(-6.78, 0.53, 28.86) ground=(-6.78, 0.53, 28.86) error=0 body=(-7.00, 0.85, 29.37)
+]]></output>
+            </test-case>
+            <test-case id="1052" name="BiteDefeatsEnemyAndPersistsAcrossReturn" fullname="PatiAdventure.Tests.PortalAdventureTests.BiteDefeatsEnemyAndPersistsAcrossReturn" methodname="BiteDefeatsEnemyAndPersistsAcrossReturn" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="2109432989" result="Passed" start-time="2026-10-12 15:35:43Z" end-time="2026-10-12 15:35:47Z" duration="4.060813" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="CompleteThreeWorldAdventureThroughMovementPickupsAndCombat" fullname="PatiAdventure.Tests.PortalAdventureTests.CompleteThreeWorldAdventureThroughMovementPickupsAndCombat" methodname="CompleteThreeWorldAdventureThroughMovementPickupsAndCombat" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="1251795835" result="Passed" start-time="2026-10-12 15:35:47Z" end-time="2026-10-12 15:37:59Z" duration="131.557198" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="Timeout" value="300000" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[PATI_PLAYTHROUGH region=1 stars=8 enemies=4
+PATI_PLAYTHROUGH region=2 stars=8 enemies=4
+PATI_PLAYTHROUGH region=3 stars=8 enemies=4
+]]></output>
+            </test-case>
+            <test-case id="1050" name="EachCornerGatewayCanBeWalkedThrough" fullname="PatiAdventure.Tests.PortalAdventureTests.EachCornerGatewayCanBeWalkedThrough" methodname="EachCornerGatewayCanBeWalkedThrough" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="470138250" result="Passed" start-time="2026-10-12 15:37:59Z" end-time="2026-10-12 15:38:08Z" duration="9.215787" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="FrozenLakeHasTheSameWalkingSurfaceAsItsVisibleIce" fullname="PatiAdventure.Tests.PortalAdventureTests.FrozenLakeHasTheSameWalkingSurfaceAsItsVisibleIce" methodname="FrozenLakeHasTheSameWalkingSurfaceAsItsVisibleIce" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="1559639306" result="Passed" start-time="2026-10-12 15:38:08Z" end-time="2026-10-12 15:38:09Z" duration="1.122765" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="GatewayColumnsAreSolidWhileTheirOpeningsRemainClear" fullname="PatiAdventure.Tests.PortalAdventureTests.GatewayColumnsAreSolidWhileTheirOpeningsRemainClear" methodname="GatewayColumnsAreSolidWhileTheirOpeningsRemainClear" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="740761896" result="Passed" start-time="2026-10-12 15:38:09Z" end-time="2026-10-12 15:38:10Z" duration="0.379045" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="GuardianTitleFollowsTheEnemyAndDoesNotOverlapItsHealth" fullname="PatiAdventure.Tests.PortalAdventureTests.GuardianTitleFollowsTheEnemyAndDoesNotOverlapItsHealth" methodname="GuardianTitleFollowsTheEnemyAndDoesNotOverlapItsHealth" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="41110101" result="Passed" start-time="2026-10-12 15:38:10Z" end-time="2026-10-12 15:38:10Z" duration="0.917241" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="PawsRestOnSlopingSurface" fullname="PatiAdventure.Tests.PortalAdventureTests.PawsRestOnSlopingSurface" methodname="PawsRestOnSlopingSurface" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="94136591" result="Passed" start-time="2026-10-12 15:38:10Z" end-time="2026-10-12 15:38:12Z" duration="1.650166" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="PlatformStarFollowsItsSupport" fullname="PatiAdventure.Tests.PortalAdventureTests.PlatformStarFollowsItsSupport" methodname="PlatformStarFollowsItsSupport" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="1608000708" result="Passed" start-time="2026-10-12 15:38:12Z" end-time="2026-10-12 15:38:13Z" duration="1.266922" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="PortalTriggerTeleportsAndAllWorldsHaveEnemies" fullname="PatiAdventure.Tests.PortalAdventureTests.PortalTriggerTeleportsAndAllWorldsHaveEnemies" methodname="PortalTriggerTeleportsAndAllWorldsHaveEnemies" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="345102369" result="Passed" start-time="2026-10-12 15:38:13Z" end-time="2026-10-12 15:38:17Z" duration="3.973199" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1053" name="SpinHitsBehindAndAttackCooldownAndPauseAreEnforced" fullname="PatiAdventure.Tests.PortalAdventureTests.SpinHitsBehindAndAttackCooldownAndPauseAreEnforced" methodname="SpinHitsBehindAndAttackCooldownAndPauseAreEnforced" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="65015580" result="Passed" start-time="2026-10-12 15:38:17Z" end-time="2026-10-12 15:38:19Z" duration="1.390229" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1054" name="StarTriggerPersistsAndTouchAttackButtonsExist" fullname="PatiAdventure.Tests.PortalAdventureTests.StarTriggerPersistsAndTouchAttackButtonsExist" methodname="StarTriggerPersistsAndTouchAttackButtonsExist" classname="PatiAdventure.Tests.PortalAdventureTests" runstate="Runnable" seed="635772027" result="Passed" start-time="2026-10-12 15:38:19Z" end-time="2026-10-12 15:38:19Z" duration="0.716273" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1055" name="PortalTransitionTests" fullname="PatiAdventure.Tests.PortalTransitionTests" classname="PatiAdventure.Tests.PortalTransitionTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-12 15:38:19Z" end-time="2026-10-12 15:38:28Z" duration="8.254361" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1056" name="ReturnPortalEnteredDuringCooldownTravelsWhenReady" fullname="PatiAdventure.Tests.PortalTransitionTests.ReturnPortalEnteredDuringCooldownTravelsWhenReady" methodname="ReturnPortalEnteredDuringCooldownTravelsWhenReady" classname="PatiAdventure.Tests.PortalTransitionTests" runstate="Runnable" seed="2129946300" result="Passed" start-time="2026-10-12 15:38:20Z" end-time="2026-10-12 15:38:28Z" duration="8.224154" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="1057" name="StartupRenderingTests" fullname="PatiAdventure.Tests.StartupRenderingTests" classname="PatiAdventure.Tests.StartupRenderingTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-10-12 15:38:28Z" end-time="2026-10-12 15:38:36Z" duration="8.421225" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1058" name="ActualFollowCameraSeesVillageAndEachWorld" fullname="PatiAdventure.Tests.StartupRenderingTests.ActualFollowCameraSeesVillageAndEachWorld" methodname="ActualFollowCameraSeesVillageAndEachWorld" classname="PatiAdventure.Tests.StartupRenderingTests" runstate="Runnable" seed="587883872" result="Passed" start-time="2026-10-12 15:38:28Z" end-time="2026-10-12 15:38:36Z" duration="8.391006" asserts="0">
+              <properties>
+                <property name="_JOINTYPE" value="UnityCombinatorial" />
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[PATI_RUNTIME_CAMERA StartupLanguage position=(0.00, 4.59, -2.18) rotation=(28.00, 0.00, 0.00)
+PATI_RUNTIME_CAMERA StartupWorld0 position=(0.00, 4.42, -2.18) rotation=(28.00, 0.00, 0.00)
+PATI_RUNTIME_CAMERA StartupWorld1 position=(0.00, 4.42, -8.18) rotation=(28.00, 0.00, 0.00)
+PATI_RUNTIME_CAMERA StartupWorld2 position=(0.00, 4.42, -8.18) rotation=(28.00, 0.00, 0.00)
+PATI_RUNTIME_CAMERA StartupWorld3 position=(0.00, 4.42, -8.18) rotation=(28.00, 0.00, 0.00)
+Saving results to: C:/Users/apple/AppData/LocalLow/PatiValidation/PatiValidation\TestResults.xml
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

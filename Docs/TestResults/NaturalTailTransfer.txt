@@ -1,0 +1,4 @@
+﻿Scene: PatiAdventure_Natural_Tail.unity
+References: 51
+Unresolved: 0
+Duplicate project GUIDs: 0

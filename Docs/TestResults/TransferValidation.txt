@@ -1,0 +1,1 @@
+Both original-workspace scenes have all direct asset/script GUIDs resolved against Assets and installed package metadata.

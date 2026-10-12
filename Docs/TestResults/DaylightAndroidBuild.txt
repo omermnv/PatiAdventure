@@ -1,0 +1,11 @@
+Android APK built successfully.
+Scene: Assets/PatiAdventure/Generated/PatiPortals 9.unity
+APK size: 37940888 bytes
+ARM64 / IL2CPP. Version code 7. Device installation and performance not tested.
+package: name='com.UnityTechnologies.com.unity.template.urpblank' versionCode='7' versionName='0.1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'25'
+targetSdkVersion:'36'
+native-code: 'arm64-v8a'
+Verified using v2 scheme (APK Signature Scheme v2): true
+Signer #1 certificate SHA-256 digest: 8786d394f1dc85d044352302486a31c9c565f6004af581cbfc735ed6c28d53ba
+APK SHA256: 5B49CC3A680771D5CACEAB68A1D99243E2492E11DC25C38E0ABBE0E88488614F

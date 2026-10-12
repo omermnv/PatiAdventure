@@ -1,0 +1,4 @@
+﻿Scene: PatiAdventure_World_Polish.unity
+References: 74
+Unresolved: 0
+Duplicate project GUIDs: 0
