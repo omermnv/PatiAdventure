@@ -11,9 +11,13 @@ namespace PatiAdventure
         public bool IsPreparingAttack=>attackAt>=0;
         private Vector3 home,originalScale=Vector3.one;
         private float stunnedUntil,attackAt=-1,defeatedAt;
+        private CombatCue attackWarning;
+        private int maximumHealth;
         private readonly RaycastHit[] obstructionHits=new RaycastHit[32];
-        private void Start(){home=transform.position;originalScale=transform.localScale;ShowHealth();}
-        private void ShowHealth(){if(healthDisplay)healthDisplay.text=IsDefeated?"":new string('|',Mathf.Max(0,health));}
+        private void Start(){home=transform.position;originalScale=transform.localScale;maximumHealth=health;ShowHealth();}
+        private void ShowHealth(){if(healthDisplay){healthDisplay.text=IsDefeated?"":new string('■',Mathf.Max(0,health))+new string('□',Mathf.Max(0,maximumHealth-health));healthDisplay.color=new Color(1,.8f,.3f);}}
+        private void CancelWarning(){if(attackWarning)Destroy(attackWarning.gameObject);attackWarning=null;}
+        private void OnDisable(){CancelWarning();attackAt=-1;}
         private bool IsSolidCover(Collider collider)
         {
             return collider&&!collider.isTrigger&&!collider.GetComponentInParent<FoxController>()&&!collider.GetComponentInParent<PortalEnemy>();
@@ -33,12 +37,15 @@ namespace PatiAdventure
         public void Hit(int damage,Vector3 origin)
         {
             if(IsDefeated||!director||!director.IsPlaying)return;
-            health-=damage;stunnedUntil=Time.time+.65f;attackAt=-1;
+            if(damage<=0)return;
+            int dealt=Mathf.Min(health,damage);
+            health=Mathf.Max(0,health-damage);stunnedUntil=Time.time+.65f;attackAt=-1;CancelWarning();
             GetComponent<CreatureMotion>()?.HitFeedback();transform.localScale=originalScale;
             ShowHealth();
             var away=transform.position-origin;away.y=0;
             if(away.sqrMagnitude>.0001f)MoveAlongGround(away.normalized,.7f,true);
             if(health<=0){IsDefeated=true;defeatedAt=Time.time;director.EnemyDefeated(enemyId);foreach(var c in GetComponentsInChildren<Collider>())c.enabled=false;}
+            ShowHealth();director.ShowEnemyImpact(transform.position,dealt,IsDefeated);
         }
         private void Update()
         {
@@ -51,10 +58,10 @@ namespace PatiAdventure
             {
                 float pulse=1+Mathf.Sin((Time.time-attackAt)*25)*.08f;
                 transform.localScale=originalScale*pulse;
-                if(Time.time>=attackAt+.8f){if(distance<1.9f&&sameHeight&&HasClearAttackPath(director.fox))director.Bump();attackAt=-1;stunnedUntil=Time.time+1.2f;transform.localScale=originalScale;ShowHealth();}
+                if(Time.time>=attackAt+.8f){if(distance<1.9f&&sameHeight&&HasClearAttackPath(director.fox))director.Bump();CancelWarning();attackAt=-1;stunnedUntil=Time.time+1.2f;transform.localScale=originalScale;ShowHealth();}
                 return;
             }
-            if(distance<1.55f&&sameHeight&&HasClearAttackPath(director.fox)){attackAt=Time.time;if(healthDisplay)healthDisplay.text="!";return;}
+            if(distance<1.55f&&sameHeight&&HasClearAttackPath(director.fox)){attackAt=Time.time;attackWarning=director.ShowEnemyWarning(transform.position);if(healthDisplay){healthDisplay.text="!";healthDisplay.color=new Color(1,.3f,.12f);}return;}
             if(distance<7&&Vector3.Distance(target,home)<9)
                 MoveOnGround(target,kind==2?1.6f:1.1f);
             else MoveOnGround(home+new Vector3(Mathf.Sin(Time.time*.8f+home.x)*1.2f,0,0),.65f);

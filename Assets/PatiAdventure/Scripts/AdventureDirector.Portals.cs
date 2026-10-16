@@ -34,16 +34,8 @@ namespace PatiAdventure
         }
         public void ShowAttackBurst(Vector3 center,bool spin)
         {
-            if(!burstMaterial||!world)return;
-            var burst=new GameObject(spin?"Tail spin trail":"Bite spark");burst.transform.SetParent(world,false);burst.transform.position=center;
-            int count=spin?14:5;
-            for(int i=0;i<count;i++)
-            {
-                float a=i*Mathf.PI*2/count;
-                var dot=Shape("Attack light",PrimitiveType.Sphere,center+new Vector3(Mathf.Cos(a),0,Mathf.Sin(a))*(spin?1.3f:.35f),Vector3.one*.1f,burstMaterial,false);
-                dot.transform.SetParent(burst.transform,true);
-            }
-            burst.AddComponent<PortalBurst>();
+            var cue=CombatVisual(spin?"Tail sweep trail":"Bite crescent",center,0,spin?2.3f:1.0f,spin?.55f:.38f);
+            if(cue){cue.arc=spin?360:110;cue.expansion=0;cue.transform.rotation=Quaternion.Euler(0,fox.transform.eulerAngles.y,0);}
         }
         private void BuildPortalWorld()
         {
@@ -152,6 +144,8 @@ namespace PatiAdventure
             }
             LivingGroundDetails(grass,leaves,rock,pale,gold);
             DressRegionalLandscape(leaves,rock,pale);
+            DressStorybookMeadow(leaves,gold);
+            BuildRegionalMotes(pale,gold);
             stars=0;foreach(string key in exploration.stars)if(key.StartsWith(region+":"))stars++;
             fox.SetCheckpoint(new Vector3(0,.2f,region==0?4:-2));fox.Respawn();
             Physics.SyncTransforms();

@@ -31,7 +31,7 @@ namespace PatiAdventure
             if (sun)
             {
                 sun.color = canyon ? new Color(1f, .86f, .67f)
-                    : glacier ? new Color(.89f, .95f, 1f) : new Color(1f, .95f, .83f);
+                    : glacier ? new Color(.89f, .95f, 1f) : new Color(1f, .91f, .73f);
                 sun.intensity = canyon ? 1.22f : glacier ? 1.15f : 1.25f;
                 sun.shadows = LightShadows.Soft;
                 sun.transform.rotation = canyon ? Quaternion.Euler(39f, -43f, 0)

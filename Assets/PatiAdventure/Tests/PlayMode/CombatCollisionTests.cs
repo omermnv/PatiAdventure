@@ -52,6 +52,32 @@ namespace PatiAdventure.Tests
         {
             while(Time.time<combat.NextAttackAt)yield return null;
         }
+        [UnityTest]public IEnumerator HittingAWindingUpEnemyCancelsItsWarningAndPreventsItsStrike()
+        {
+            int respawns=0;director.fox.Respawned+=()=>respawns++;
+            enemy.enabled=true;
+            float deadline=Time.time+2;
+            while(!enemy.IsPreparingAttack&&Time.time<deadline)yield return null;
+            Assert.IsTrue(enemy.IsPreparingAttack);
+            Assert.NotNull(System.Array.Find(director.GetComponentsInChildren<CombatCue>(),cue=>cue.name=="Enemy attack warning"));
+            enemy.Hit(2,director.fox.transform.position);
+            Assert.IsFalse(enemy.IsPreparingAttack);
+            yield return null;
+            Assert.IsNull(System.Array.Find(director.GetComponentsInChildren<CombatCue>(),cue=>cue.name=="Enemy attack warning"));
+            yield return new WaitForSeconds(.85f);
+            Assert.AreEqual(0,respawns,"An interrupted attack must not damage Pati.");
+        }
+        [UnityTest]public IEnumerator SafeReturnProtectionMatchesTheDamageCooldown()
+        {
+            int respawns=0;director.fox.Respawned+=()=>respawns++;
+            director.Bump();director.Bump();
+            Assert.AreEqual(1,respawns);
+            var protection=System.Array.Find(director.GetComponentsInChildren<CombatCue>(),cue=>cue.name=="Safe return protection");
+            Assert.NotNull(protection);Assert.AreEqual(director.fox.transform,protection.follow);
+            yield return new WaitForSeconds(2.1f);
+            Assert.IsTrue(protection==null,"The visible shield must expire with protection.");
+            director.Bump();Assert.AreEqual(2,respawns);
+        }
         [UnityTest]public IEnumerator BiteAndSpinRespectSolidCoverButIgnoreActorBodiesAndTriggers()
         {
             var wall=Cover();var combat=director.fox.GetComponent<FoxCombat>();

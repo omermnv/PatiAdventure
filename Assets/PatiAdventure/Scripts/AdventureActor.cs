@@ -12,7 +12,7 @@ namespace PatiAdventure
         private Vector3 localHome;
         private float cooldown;
         private bool collected;
-        private void Start() { home = transform.position; localHome=transform.localPosition; }
+        private void Start() { home = transform.position; localHome=transform.localPosition; if(role==Role.Hazard&&director)director.ShowHazardMarker(this); }
         private void Update()
         {
             if (director == null || !director.IsPlaying) return;

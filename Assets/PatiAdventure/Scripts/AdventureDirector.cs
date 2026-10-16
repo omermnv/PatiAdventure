@@ -147,8 +147,9 @@ namespace PatiAdventure
         }
         public void Bump()
         {
-            if (Time.time < hurtUntil) return;
-            hurtUntil = Time.time + 2; fox.Respawn(); notice = L("Sorun değil! Güvenli noktadan tekrar deneyelim.", "That is okay! Try again from your safe spot.");
+            if (!IsPlaying || Time.time < hurtUntil) return;
+            ShowSafeReturn();
+            hurtUntil = Time.time + 2; fox.Respawn(); ShowReturnProtection(); notice = L("Güvenli noktadasın! Mavi halka bitene kadar korunuyorsun.", "Safe again! The blue ring protects you until it disappears.");
         }
         public void TryFinish()
         {
